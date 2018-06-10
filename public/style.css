@@ -1,0 +1,106 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: aliceblue;
+}
+
+.test{
+  z-index:-1;
+  position: fixed;
+  height: 400px;
+  width: 400px;
+/*   top: 70px;
+  right: 15px; */
+}
+
+.buttonTestArea{
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 400px;
+/*   position: fixed; */
+/*   top: 70px;
+  right: 15px; */
+}
+
+.buttonTest {
+  flex-grow:1;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+  padding: 5px 5px 5px 5px;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+  position: relative;
+  z-index:-1;
+}
+
+/*
+Approach here:
+- Randomize the top/right position of the copy for the "test" or copy feature. (maybe should do it within a given box??)
+- Tile lots of buttons.
+- Need to somehow position the buttons in a way that's fixed, so that they are not sliding over when clicked (that means you just need to click them all to get them to disappear.
+*/
