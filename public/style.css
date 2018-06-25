@@ -12,18 +12,22 @@ body {
 }
 
 .test{
+  background-color: black;
   z-index:-1;
   position: fixed;
-  height: 400px;
-  width: 400px;
-/*   top: 70px;
-  right: 15px; */
+  height: 380px;
+  width: 410px;
+  cursor:url(https://cdn.glitch.com/27db5d09-6eac-48e4-ba2e-3fe2e4569486%2Fc4ab3d83f97761ea44e906991fab898f.jpg?1529879669999), auto;
+}
+
+#cardcopy {
+  position: absolute;
 }
 
 .buttonTestArea{
   z-index: 1;
-  display: flex;
-  flex-wrap: wrap;
+/*   display: flex;
+  flex-wrap: wrap; */
   height: 400px;
   width: 400px;
 /*   position: fixed; */
@@ -98,9 +102,26 @@ footer {
   z-index:-1;
 }
 
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn .5s ease-in 1 forwards;
+}
+
+.is-paused {
+  animation-play-state: paused;
+}
+
 /*
-Approach here:
-- Randomize the top/right position of the copy for the "test" or copy feature. (maybe should do it within a given box??)
-- Tile lots of buttons.
-- Need to somehow position the buttons in a way that's fixed, so that they are not sliding over when clicked (that means you just need to click them all to get them to disappear.
+Still to do: 
+- STYLIZE the whole thing
+- Animate buttons when they disappear. (Maybe they should "pop")
+- Animate the background of the black to fade away. 
+- Add in better copy throughout
+- Clean up the code :) 
 */
