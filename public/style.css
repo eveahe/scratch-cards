@@ -1,0 +1,127 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: aliceblue;
+}
+
+.test{
+  background-color: black;
+  z-index:-1;
+  position: fixed;
+  height: 380px;
+  width: 410px;
+  cursor:url(https://cdn.glitch.com/27db5d09-6eac-48e4-ba2e-3fe2e4569486%2Fc4ab3d83f97761ea44e906991fab898f.jpg?1529879669999), auto;
+}
+
+#cardcopy {
+  position: absolute;
+}
+
+.buttonTestArea{
+  z-index: 1;
+/*   display: flex;
+  flex-wrap: wrap; */
+  height: 400px;
+  width: 400px;
+/*   position: fixed; */
+/*   top: 70px;
+  right: 15px; */
+}
+
+.buttonTest {
+  flex-grow:1;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+  padding: 5px 5px 5px 5px;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+  position: relative;
+  z-index:-1;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn .5s ease-in 1 forwards;
+}
+
+.is-paused {
+  animation-play-state: paused;
+}
+
+/*
+Still to do: 
+- STYLIZE the whole thing
+- Animate buttons when they disappear. (Maybe they should "pop")
+- Animate the background of the black to fade away. 
+- Add in better copy throughout
+- Clean up the code :) 
+*/
